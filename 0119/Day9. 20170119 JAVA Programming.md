@@ -143,8 +143,8 @@ public class Bbs {
 }
 ```
 
-- **Controller.java**
 
+- **Controller.java**
 * 각종 명령을 제어하는 클래스. (Create, Update, Read, Delete 함수)
 
 ```
@@ -218,8 +218,8 @@ public class Controller {
 }
 ```
 
-- **Util.java**
 
+- **Util.java**
 * 코드가 복잡하고 자구 쓰이는 매소드의 집합소. ex)DatetimeC()
 
 ```
@@ -243,10 +243,9 @@ public class Util {
 
 ```
 
+
 - **mainBbs.java**
-
 * 실행하는 부분
-
 ```
 package com.heosongmoo.bbs;
 
