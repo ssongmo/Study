@@ -1,108 +1,108 @@
-#Day9. °´Ã¼, Å¬·¡½º, °Ô½ÃÆÇ ¸¸µé±â(1) 
+#Day9. ê°ì²´, í´ë˜ìŠ¤, ê²Œì‹œíŒ ë§Œë“¤ê¸°(1) 
 =================================================
 
-* °´Ã¼¶õ? ¼Ó¼º°ú ±â´ÉÀ» °¡Áö´Â ´ë»óÀ» ¸»ÇÑ´Ù. °´Ã¼, ±â´ÉÀÌ ¾ø´Â Å¬·¡½ºµµ ÀÖ´Ù.
+* ê°ì²´ë€? ì†ì„±ê³¼ ê¸°ëŠ¥ì„ ê°€ì§€ëŠ” ëŒ€ìƒì„ ë§í•œë‹¤. ê°ì²´, ê¸°ëŠ¥ì´ ì—†ëŠ” í´ë˜ìŠ¤ë„ ìˆë‹¤.
 ```
-ex)»ç¶÷
+ex)ì‚¬ëŒ
 
-¼Ó¼º: ´«, ÀÔ, ±Í
-±â´É: ´« = º»´Ù. ÀÔ= ¸»ÇÑ´Ù, ¸Ô´Â´Ù.
+ì†ì„±: ëˆˆ, ì…, ê·€
+ê¸°ëŠ¥: ëˆˆ = ë³¸ë‹¤. ì…= ë§í•œë‹¤, ë¨¹ëŠ”ë‹¤.
 ```
 
-###opp¶õ?
+###oppë€?
 --------------------------------
 
- object oriented Programming : °´Ã¼ÁöÇâ ÇÁ·Î±×·¡¹Ö. 
+ object oriented Programming : ê°ì²´ì§€í–¥ í”„ë¡œê·¸ë˜ë°. 
 
-¼Ó¼º°ú ±â´ÉÀÌ ¹­ÀÎ ÇÏ³ªÀÇ °´Ã¼(class)´ÜÀ§´Â ¸¸µå´Â °Í.
+ì†ì„±ê³¼ ê¸°ëŠ¥ì´ ë¬¶ì¸ í•˜ë‚˜ì˜ ê°ì²´(class)ë‹¨ìœ„ëŠ” ë§Œë“œëŠ” ê²ƒ.
 
-### opp °³¹ß ´Ü°è
+### opp ê°œë°œ ë‹¨ê³„
 
-1.°èÈ¹ 2.ºĞ¼® 3.¼³°è 4.±¸Çö 5.Å×½ºÆ®
+1.ê³„íš 2.ë¶„ì„ 3.ì„¤ê³„ 4.êµ¬í˜„ 5.í…ŒìŠ¤íŠ¸
 
 
-opp ¼³°è ¿øÄ¢
+opp ì„¤ê³„ ì›ì¹™
 ----------------------------------------
 
 * SOLID
-  -SRP - ´ÜÀÏ Ã¥ÀÓÀÇ ¿øÄ¢ ( ¾î¶² °´Ã¼´Â ¼öÁ¤ÀÌ³ª º¯°æÀ» ÇØ¾ßÇÏ´Â ÀÌÀ¯´Â ÇÏ³ª¿©¾ßÇÑ´Ù.)
+  -SRP - ë‹¨ì¼ ì±…ì„ì˜ ì›ì¹™ ( ì–´ë–¤ ê°ì²´ëŠ” ìˆ˜ì •ì´ë‚˜ ë³€ê²½ì„ í•´ì•¼í•˜ëŠ” ì´ìœ ëŠ” í•˜ë‚˜ì—¬ì•¼í•œë‹¤.)
 
-  -OCP - °³¹æ-Æó¼â¿øÄ¢
+  -OCP - ê°œë°©-íì‡„ì›ì¹™
 
-  -LSP - ¸®½ºÄÚÇÁ ±³Ã¼ ¿øÄ¢
+  -LSP - ë¦¬ìŠ¤ì½”í”„ êµì²´ ì›ì¹™
 
-  -DIP - ÀÇÁ¸ °ü°è ¿ªÀü ¿øÄ¢
+  -DIP - ì˜ì¡´ ê´€ê³„ ì—­ì „ ì›ì¹™
 
-  -ISP - ÀÎÅÍÆäÀÌ½º °İ¸® ¿øÄ¢
+  -ISP - ì¸í„°í˜ì´ìŠ¤ ê²©ë¦¬ ì›ì¹™
 
 
-###ÀÀÁıµµ
+###ì‘ì§‘ë„
   
-³ô´Ù´Â °ÍÀº ÀÚ½ÅÀÇ Å¬·¡½º¿¡¼­ Àç»ç¿ëÀ» ¸¹ÀÌ ÇÑ´Ù´Â °Í.
+ë†’ë‹¤ëŠ” ê²ƒì€ ìì‹ ì˜ í´ë˜ìŠ¤ì—ì„œ ì¬ì‚¬ìš©ì„ ë§ì´ í•œë‹¤ëŠ” ê²ƒ.
 
-###°áÇÕµµ
+###ê²°í•©ë„
  
-´Ù¸¥ Å¬·¡½º¿Í ¿¬°áÀÌ ¸¹ÀÌ µÇ´Â °Í.
+ë‹¤ë¥¸ í´ë˜ìŠ¤ì™€ ì—°ê²°ì´ ë§ì´ ë˜ëŠ” ê²ƒ.
 
-* °³¹ßÀº ÀÀÁıµµ¸¦ ³ôÀÌ°í °áÇÕµµ¸¦ ³·Ãß´Â °ÍÀÌ ÁÁ´Ù.
+* ê°œë°œì€ ì‘ì§‘ë„ë¥¼ ë†’ì´ê³  ê²°í•©ë„ë¥¼ ë‚®ì¶”ëŠ” ê²ƒì´ ì¢‹ë‹¤.
 
-##Class Á¤ÀÇÇÏ±â
+##Class ì •ì˜í•˜ê¸°
 
-    Public class Main //Class¸íÀº Ç×»ó ´ë¹®ÀÚ.
+    Public class Main //Classëª…ì€ í•­ìƒ ëŒ€ë¬¸ì.
 
-* Overload = ¸®ÅÏÅ¸ÀÔÀÌ³ª Á¢±ÙÁ¦¾î°¡´Â °°¾Æµµ µÇÁö¸¸ ¾È¿¡ 
-ÆÄ¶ó¹ÌÅÍÀÇ °³¼ö³ª ¸®ÅÏÅ¸ÀÔÀÌ ´Ş¶ó¾ßÇÑ´Ù.
+* Overload = ë¦¬í„´íƒ€ì…ì´ë‚˜ ì ‘ê·¼ì œì–´ê°€ëŠ” ê°™ì•„ë„ ë˜ì§€ë§Œ ì•ˆì— 
+íŒŒë¼ë¯¸í„°ì˜ ê°œìˆ˜ë‚˜ ë¦¬í„´íƒ€ì…ì´ ë‹¬ë¼ì•¼í•œë‹¤.
 
-* Á¢±ÙÁ¦¾îÀÚ
+* ì ‘ê·¼ì œì–´ì
 
-public : °°Àº ÆĞÅ°Áö³»¿¡¼± Á¢±ÙÀÌ °¡´ÉÇÏ´Ù.
+public : ê°™ì€ íŒ¨í‚¤ì§€ë‚´ì—ì„  ì ‘ê·¼ì´ ê°€ëŠ¥í•˜ë‹¤.
 protected
-private : Á¢±ÙÁ¦ÇÑ ½ÃÅ³¶§. ³»ºÎ¿¡¼­¸¸ »ç¿ëÇÏ´Â º¯¼ö.
+private : ì ‘ê·¼ì œí•œ ì‹œí‚¬ë•Œ. ë‚´ë¶€ì—ì„œë§Œ ì‚¬ìš©í•˜ëŠ” ë³€ìˆ˜.
 
-* »ó¼Ó
+* ìƒì†
 
--ºÎ¸ğÀÇ Class¸¦ °¡Á®¿Í¼­ ±×´ë·Î »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+-ë¶€ëª¨ì˜ Classë¥¼ ê°€ì ¸ì™€ì„œ ê·¸ëŒ€ë¡œ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤.
 
 
-»ó¼Ó¹ŞÀº »óÅÂ¿¡¼­ ºÎ¸ğ,ÀÚ½Ä¿¡ °°Àº ÀÌ¸§ÀÇ º¯¼ö¸¦ »ç¿ëÇÒ¶§. 
-ÀÚ½ÄÀÇ °ÍÀ» »ç¿ëÇÏ¸é **this**, »ó¼Ó¹ŞÀº ºÎ¸ğ º¯¼ö¸¦ »ç¿ëÇÒ¶© **super**
+ìƒì†ë°›ì€ ìƒíƒœì—ì„œ ë¶€ëª¨,ìì‹ì— ê°™ì€ ì´ë¦„ì˜ ë³€ìˆ˜ë¥¼ ì‚¬ìš©í• ë•Œ. 
+ìì‹ì˜ ê²ƒì„ ì‚¬ìš©í•˜ë©´ **this**, ìƒì†ë°›ì€ ë¶€ëª¨ ë³€ìˆ˜ë¥¼ ì‚¬ìš©í• ë• **super**
  
-ÀÚ½ÄÀÌ ºÎ¸ğÀÇ ¸Å¼Òµå¸¦ »ç¿ëÇÏ°í ½ÍÀ»¶§ @Override¸¦ ÇØ¾ßÇÑ´Ù.
-Override´Â Á¢±Ù Á¦ÇÑÀÚ¸¦ Á¦¿ÜÇÏ°í ¸ğµÎ °°À½.
+ìì‹ì´ ë¶€ëª¨ì˜ ë§¤ì†Œë“œë¥¼ ì‚¬ìš©í•˜ê³  ì‹¶ì„ë•Œ @Overrideë¥¼ í•´ì•¼í•œë‹¤.
+OverrideëŠ” ì ‘ê·¼ ì œí•œìë¥¼ ì œì™¸í•˜ê³  ëª¨ë‘ ê°™ìŒ.
 
-* ´ÙÇü¼º
-ºÎ¸ğÀÇ Á¤º¸¸¦ °®°í ÀÖÀ¸¸é ±âº»ÀûÀÎ ÀÚ½ÄµéÀÇ À¯»ç Á¤º¸¸¦ À¯ÃßÇÒ ¼ö ÀÖ´Ù.
+* ë‹¤í˜•ì„±
+ë¶€ëª¨ì˜ ì •ë³´ë¥¼ ê°–ê³  ìˆìœ¼ë©´ ê¸°ë³¸ì ì¸ ìì‹ë“¤ì˜ ìœ ì‚¬ ì •ë³´ë¥¼ ìœ ì¶”í•  ìˆ˜ ìˆë‹¤.
 
 * Static
-//Ãß°¡º¸Ãæ
+//ì¶”ê°€ë³´ì¶©
 
-final = Ã³À½ ¼³Á¤ÇØÁØ °ª ±×´ë·Î. º¯°æÀÌ ¾ÈµÈ´Ù.
+final = ì²˜ìŒ ì„¤ì •í•´ì¤€ ê°’ ê·¸ëŒ€ë¡œ. ë³€ê²½ì´ ì•ˆëœë‹¤.
 
-###°Ô½ÃÆÇ ¸¸µé±â(1)
+##ê²Œì‹œíŒ ë§Œë“¤ê¸°(1)
+-------------
+###ì„¤ê³„
 
-###¼³°è
+1. ê²Œì‹œíŒì— ë“¤ì–´ê°ˆ ë• ëª…ë ¹ì–´ë¥¼ ì…ë ¥í•´ì„œ ë“¤ì–´ê°„ë‹¤. ex) Create ì…ë ¥ì‹œ ì‘ì„±í™”ë©´ìœ¼ë¡œ..
+2. í´ë˜ìŠ¤ë¥¼ ì„¸ë¶„í™” ì‹œí‚¤ê³ , ê¸°ëŠ¥ì„ ì‘ì€ ë‹¨ìœ„ë¡œ í•¨ìˆ˜í™” ì‹œí‚¨ë‹¤. ex) Create(), Read(), Print(), run()...
+3. í•¨ìˆ˜ë“¤ê³¼ ë©”ì¸ì„ ëª¨ë‘ ì‡ëŠ”ë‹¤. 
 
-1. °Ô½ÃÆÇ¿¡ µé¾î°¥ ¶© ¸í·É¾î¸¦ ÀÔ·ÂÇØ¼­ µé¾î°£´Ù. ex) Create ÀÔ·Â½Ã ÀÛ¼ºÈ­¸éÀ¸·Î..
-2. Å¬·¡½º¸¦ ¼¼ºĞÈ­ ½ÃÅ°°í, ±â´ÉÀ» ÀÛÀº ´ÜÀ§·Î ÇÔ¼öÈ­ ½ÃÅ²´Ù. ex) Create(), Read(), Print(), run()...
-3. ÇÔ¼öµé°ú ¸ŞÀÎÀ» ¸ğµÎ ÀÕ´Â´Ù. 
-
-###±¸Çö
+###êµ¬í˜„
 
 
-- Bbs.java
+- **Bbs.java**
 
-* °Ô½ÃÆÇÀ» ±¸¼ºÇÏ´Â ¸®½ºÆ®¸¦ ¸¸µé°í set,getÇÔ¼ö¸¦ ¼³Á¤.
+* ê²Œì‹œíŒì„ êµ¬ì„±í•˜ëŠ” ë¦¬ìŠ¤íŠ¸ë¥¼ ë§Œë“¤ê³  set,getí•¨ìˆ˜ë¥¼ ì„¤ì •.
 
-package com.heosongmoo.bbs;
 
 ```
+package com.heosongmoo.bbs;
 public class Bbs {
-	public Bbs(){  //»ı¼ºÀÚ »ı¼º.
+	public Bbs(){  //ìƒì„±ì ìƒì„±.
 	}
 	
 	
-	//±Û¹øÈ£
-	//¸®½ºÆ®¸¸µé±â
+	//ê¸€ë²ˆí˜¸
+	//ë¦¬ìŠ¤íŠ¸ë§Œë“¤ê¸°
 	private int no;
 	private String title;
 	private String content;
@@ -143,9 +143,9 @@ public class Bbs {
 }
 ```
 
-- Controller
+- **Controller.java**
 
-* °¢Á¾ ¸í·ÉÀ» Á¦¾îÇÏ´Â Å¬·¡½º. (Create, Update, Read, Delete ÇÔ¼ö)
+* ê°ì¢… ëª…ë ¹ì„ ì œì–´í•˜ëŠ” í´ë˜ìŠ¤. (Create, Update, Read, Delete í•¨ìˆ˜)
 
 ```
 package com.heosongmoo.bbs;
@@ -162,7 +162,7 @@ public class Controller {
 	}
 	
 	/**
-	 * »ı¼º
+	 * ìƒì„±
 	 * 
 	 * @param bbs
 	 */
@@ -173,7 +173,7 @@ public class Controller {
 		
 	}
 	
-	/** Æ¯Á¤ ±Û ÀĞ±â
+	/** íŠ¹ì • ê¸€ ì½ê¸°
 	 * 
 	 * @param no
 	 */
@@ -186,7 +186,7 @@ public class Controller {
 		return null;
 	}
 	
-	/** ÀüÃ¼ ÀĞ±â
+	/** ì „ì²´ ì½ê¸°
 	 * 
 	 * @return
 	 */
@@ -195,15 +195,15 @@ public class Controller {
 		return database;
 	}
 	
-	/** ¼öÁ¤
+	/** ìˆ˜ì •
 	 * 
 	 * @param bbs
 	 */
 	public void update(Bbs bbs){
-		//¾Æ¹«°Íµµ ¾ÈÇØµµ µÊ.
+		//ì•„ë¬´ê²ƒë„ ì•ˆí•´ë„ ë¨.
 	}
 	
-	/** »èÁ¦
+	/** ì‚­ì œ
 	 * 
 	 * @param no
 	 */
@@ -218,9 +218,9 @@ public class Controller {
 }
 ```
 
-- Util.java
+- **Util.java**
 
-* ÄÚµå°¡ º¹ÀâÇÏ°í ÀÚ±¸ ¾²ÀÌ´Â ¸Å¼ÒµåÀÇ ÁıÇÕ¼Ò. ex)DatetimeC()
+* ì½”ë“œê°€ ë³µì¡í•˜ê³  ìêµ¬ ì“°ì´ëŠ” ë§¤ì†Œë“œì˜ ì§‘í•©ì†Œ. ex)DatetimeC()
 
 ```
 package com.heosongmoo.bbs;
@@ -243,9 +243,9 @@ public class Util {
 
 ```
 
-- mainBbs.java
+- **mainBbs.java**
 
-* ½ÇÇàÇÏ´Â ºÎºĞ
+* ì‹¤í–‰í•˜ëŠ” ë¶€ë¶„
 
 ```
 package com.heosongmoo.bbs;
@@ -262,17 +262,17 @@ public class MainBbs {
 	}
 	
 	public void run(){
-	Controller controll = new Controller(); //ÄÁÆ®·Ñ·¯ °³Ã¼ »ı¼º.
+	Controller controll = new Controller(); //ì»¨íŠ¸ë¡¤ëŸ¬ ê°œì²´ ìƒì„±.
 	
 	Scanner scanner = new Scanner(System.in);
-	Scanner textScanner = new Scanner(System.in);  //ÅØ½ºÆ® ÀÔ·Â½Ã µû·Î ÀúÀåÇÏ±â À§ÇÑ ½ºÄ³³Ê
+	Scanner textScanner = new Scanner(System.in);  //í…ìŠ¤íŠ¸ ì…ë ¥ì‹œ ë”°ë¡œ ì €ì¥í•˜ê¸° ìœ„í•œ ìŠ¤ìºë„ˆ
 	String command = "";
 	int num=0;
-	boolean runFlag = true; //exit¿ë ÇÃ·¡±×
-	boolean contentFlag = true; //ÅØ½ºÆ® ÀÔ·Â½Ã EnterÅ° Àû¿ë ÇÃ·¡±×
+	boolean runFlag = true; //exitìš© í”Œë˜ê·¸
+	boolean contentFlag = true; //í…ìŠ¤íŠ¸ ì…ë ¥ì‹œ Enterí‚¤ ì ìš© í”Œë˜ê·¸
 	
 		while(runFlag) {
-			System.out.println("Welcome!!\n »ç¿ëÇÏ½Ç Command¸¦ ÀÔ·ÂÇÏ¼¼¿ä. : create, read, list, exit");
+			System.out.println("Welcome!!\n ì‚¬ìš©í•˜ì‹¤ Commandë¥¼ ì…ë ¥í•˜ì„¸ìš”. : create, read, list, exit");
 			command = scanner.nextLine();
 			
 			if(command.equals("create")){
@@ -281,13 +281,13 @@ public class MainBbs {
 				bbs.setNo(num+1);;
 				num++;
 								
-				System.out.print("ÀÛ¼ºÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä :    ");
+				System.out.print("ì‘ì„±ìë¥¼ ì…ë ¥í•˜ì„¸ìš” :    ");
 				bbs.setAuthor(scanner.nextLine());
 				
-				System.out.print("Á¦¸ñÀ» ÀÔ·ÂÇÏ¼¼¿ä :   ");
+				System.out.print("ì œëª©ì„ ì…ë ¥í•˜ì„¸ìš” :   ");
 				bbs.setTitle(scanner.nextLine());
 				
-				print("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä. ");
+				print("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”. ");
 				
 				while(contentFlag == true){
 				bbs.setContent(textScanner.nextLine());
@@ -309,7 +309,7 @@ public class MainBbs {
 				list(controll);
 				
 			}else if(command.equals("exit")){
-				print("°Ô½ÃÆÇÀ» Á¾·áÇÕ´Ï´Ù.");
+				print("ê²Œì‹œíŒì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				runFlag = false;
 				}
 			}
@@ -317,26 +317,26 @@ public class MainBbs {
 
 	
 	public void read(Scanner scanner, Controller controll){
-		//±Û¹øÈ£
-		print("±Û ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		//ê¸€ë²ˆí˜¸
+		print("ê¸€ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		int no = Integer.parseInt(scanner.nextLine());
 		
 		Bbs alreadyRead = controll.read(no);
 		if(alreadyRead != null){
-			print("±Û ¹øÈ£: " +alreadyRead.getNo());
-			print("±Û¾´ÀÌ: " +alreadyRead.getAuthor());
-			print("Á¦¸ñ: " +alreadyRead.getTitle());
-			print("³»¿ë " +alreadyRead.getContent());
-			print("ÀÛ¼º½Ã°£: "+alreadyRead.getDatetime());
+			print("ê¸€ ë²ˆí˜¸: " +alreadyRead.getNo());
+			print("ê¸€ì“´ì´: " +alreadyRead.getAuthor());
+			print("ì œëª©: " +alreadyRead.getTitle());
+			print("ë‚´ìš© " +alreadyRead.getContent());
+			print("ì‘ì„±ì‹œê°„: "+alreadyRead.getDatetime());
 		}
 	}
 	
 	public void list(Controller controll){
 		ArrayList<Bbs> list = controll.readAll();
 		for(Bbs item : list){
-			System.out.print("±Û¹øÈ£: "+item.getNo()+"  ±Û¾´ÀÌ: "+item.getTitle()+"  Á¦¸ñ: "+ item.getTitle());
-			print("  ÀÛ¼º½Ã°£: "+item.getDatetime());
-			print("³»¿ë:  "+item.getContent());
+			System.out.print("ê¸€ë²ˆí˜¸: "+item.getNo()+"  ê¸€ì“´ì´: "+item.getTitle()+"  ì œëª©: "+ item.getTitle());
+			print("  ì‘ì„±ì‹œê°„: "+item.getDatetime());
+			print("ë‚´ìš©:  "+item.getContent());
 		}	
 	}
 	public void print(String value){
@@ -345,10 +345,10 @@ public class MainBbs {
 }
 ```
 
-###Á¤¸®
+###ì •ë¦¬
 
-¿À´Ã Ã³À½À¸·Î °Ô½ÃÆÇÀ» ¸¸µé¾î º¸¾Ò´Ù. Á¤½Å¾øÀÌ ÇÏ´À¶ó ¸ŞÀÎ ÄÚµå°¡ ±²ÀåÈ÷ ÁöÀúºĞ Çß°í, °¡µ¶¼ºµµ ¹®Á¦°¡ ÀÖ´Â °ÍÀ¸·Î º¸¿©Áø´Ù.
-ÁÖ¸»±îÁö ±ò²ûÇÏ°Ô °Ô½ÃÆÇÀ» ¸¸µé¾îº¸µµ·Ï ÇØ¾ß°Ú´Ù..
+ì˜¤ëŠ˜ ì²˜ìŒìœ¼ë¡œ ê²Œì‹œíŒì„ ë§Œë“¤ì–´ ë³´ì•˜ë‹¤. ì •ì‹ ì—†ì´ í•˜ëŠë¼ ë©”ì¸ ì½”ë“œê°€ êµ‰ì¥íˆ ì§€ì €ë¶„ í–ˆê³ , ê°€ë…ì„±ë„ ë¬¸ì œê°€ ìˆëŠ” ê²ƒìœ¼ë¡œ ë³´ì—¬ì§„ë‹¤.
+ì£¼ë§ê¹Œì§€ ê¹”ë”í•˜ê²Œ ê²Œì‹œíŒì„ ë§Œë“¤ì–´ë³´ë„ë¡ í•´ì•¼ê² ë‹¤..
 
 
 
