@@ -1,58 +1,59 @@
-#°Ô½ÃÆÇ ¸¸µé±â2 (Update, Delete Ãß°¡), ÆÄÀÏ ÀÔÃâ·Â
+#ê²Œì‹œíŒ ë§Œë“¤ê¸°2 (Update, Delete ì¶”ê°€), íŒŒì¼ ì…ì¶œë ¥
 
-Áö³­ ½Ã°£¿¡ °Ô½ÃÆÇÀ» ¸¸µé¾úÁö¸¸ ÇÔ¼ö°¡ ºĞ¸® µÇÁö¾Ê¾Æ ÁöÀúºĞ Çß¾ú°í, update±â´É°ú delete±â´ÉÀ» Ãß°¡ÇÏ¿´´Ù.
+ì§€ë‚œ ì‹œê°„ì— ê²Œì‹œíŒì„ ë§Œë“¤ì—ˆì§€ë§Œ í•¨ìˆ˜ê°€ ë¶„ë¦¬ ë˜ì§€ì•Šì•„ ì§€ì €ë¶„ í–ˆì—ˆê³ , updateê¸°ëŠ¥ê³¼ deleteê¸°ëŠ¥ì„ ì¶”ê°€í•˜ì˜€ë‹¤.
 
-¶ÇÇÑ ÀÌ °Ô½ÃÆÇÀ» New I/O Áï, nio ÆÄÀÏ ÀÔÃâ·Â ¹æ½ÄÀ» Àû¿ëÇØº¸¾Ò´Ù.
+ë˜í•œ ì´ ê²Œì‹œíŒì„ New I/O ì¦‰, nio íŒŒì¼ ì…ì¶œë ¥ ë°©ì‹ì„ ì ìš©í•´ë³´ì•˜ë‹¤.
 
-¸ÕÀú °£´ÜÇÏ°Ô IO¿Í NIO¹æ½Ä¿¡ ´ëÇØ¼­ ¾Ë¾Æº¸°Ú´Ù.
+ë¨¼ì € ê°„ë‹¨í•˜ê²Œ IOì™€ NIOë°©ì‹ì— ëŒ€í•´ì„œ ì•Œì•„ë³´ê² ë‹¤.
 
 
 * **IO / NIO**
 
-io vs nio µ¥ÀÌÅÍ¸¦ ÀÔÃâ·Â ÇÑ´Ù´Â ¸ñÀûÀº µ¿ÀÏÇÏÁö¸¸, ¹æ½Ä¿¡ ÀÖ¾î¼­´Â ¾Æ·¡¿Í °°Àº Â÷ÀÌÁ¡ÀÌ ÀÖ´Ù.
+io vs nio ë°ì´í„°ë¥¼ ì…ì¶œë ¥ í•œë‹¤ëŠ” ëª©ì ì€ ë™ì¼í•˜ì§€ë§Œ, ë°©ì‹ì— ìˆì–´ì„œëŠ” ì•„ë˜ì™€ ê°™ì€ ì°¨ì´ì ì´ ìˆë‹¤.
  
-| ºñ±³ | IO | NIO | 
+| ë¹„êµ | IO | NIO | 
 |:-----|:--:|----:|
-ÀÔÃâ·Â ¹æ½Ä| ½ºÆ®¸² | Ã¤³Î |
-¹öÆÛ¹æ½Ä | ³Í¹öÆÛ | ¹öÆÛ |
-ºñµ¿±â¹æ½Ä | Áö¿ø¾ÈÇÔ | Áö¿ø |
-ºí·ÎÅ·/³Íºí·ÎÅ·¹æ½Ä | ºí·ÎÅ· ¹æ½Ä¸¸ | µÑ´Ù Áö¿ø|
+ì…ì¶œë ¥ ë°©ì‹| ìŠ¤íŠ¸ë¦¼ | ì±„ë„ |
+ë²„í¼ë°©ì‹ | ë„Œë²„í¼ | ë²„í¼ |
+ë¹„ë™ê¸°ë°©ì‹ | ì§€ì›ì•ˆí•¨ | ì§€ì› |
+ë¸”ë¡œí‚¹/ë„Œë¸”ë¡œí‚¹ë°©ì‹ | ë¸”ë¡œí‚¹ ë°©ì‹ë§Œ | ë‘˜ë‹¤ ì§€ì›|
 
-* nioÀÇ pathÃ³¸® :  ¸ğµÎ ¹ÙÀÌÆ® Çü½ÄÀ¸·Î ¹Ù·Î Ã³¸®ÇÑ´Ù.
+* nioì˜ pathì²˜ë¦¬ :  ëª¨ë‘ ë°”ì´íŠ¸ í˜•ì‹ìœ¼ë¡œ ë°”ë¡œ ì²˜ë¦¬í•œë‹¤.
 
-* ¹öÆÛ¶õ : HW/SW°£ÀÇ ¼Óµµ Â÷ÀÌ¸¦ ÁÙ¿©ÁØ´Ù. Ã¤³ÎÀº ±âº»ÀûÀ¸·Î ¹öÆÛ¸¦ »ç¿ëÇÑ´Ù.
+* ë²„í¼ë€ : HW/SWê°„ì˜ ì†ë„ ì°¨ì´ë¥¼ ì¤„ì—¬ì¤€ë‹¤. ì±„ë„ì€ ê¸°ë³¸ì ìœ¼ë¡œ ë²„í¼ë¥¼ ì‚¬ìš©í•œë‹¤.
 
-* ÆÄÀÏÀÇ ¸ŞÅ¸Á¤º¸°¡ µé¾îÀÖ´Â inode¿Í °°Àº °ÍÀÌ »ı±â´Âµ¥ path´Â °æ·Î Á¤º¸¸¸ µé¾î°¡±â ¶§¹®¿¡ ¿ë·®ÀÌ Àû¾îÁø´Ù.
-°á·ĞÀûÀ¸·Î ¸ğµç ¸ŞÅ¸Á¤º¸¿¡ µé¾î°¡´Â °ÍÀº ¿À·¡ °É¸®±â ¶§¹®¿¡ path¸¦ ÀÌ¿ëÇØ¼­ ÇÏ´Â ¹æ½ÄÀÌ´Ù. 
+* íŒŒì¼ì˜ ë©”íƒ€ì •ë³´ê°€ ë“¤ì–´ìˆëŠ” inodeì™€ ê°™ì€ ê²ƒì´ ìƒê¸°ëŠ”ë° pathëŠ” ê²½ë¡œ ì •ë³´ë§Œ ë“¤ì–´ê°€ê¸° ë•Œë¬¸ì— ìš©ëŸ‰ì´ ì ì–´ì§„ë‹¤.
+ê²°ë¡ ì ìœ¼ë¡œ ëª¨ë“  ë©”íƒ€ì •ë³´ì— ë“¤ì–´ê°€ëŠ” ê²ƒì€ ì˜¤ë˜ ê±¸ë¦¬ê¸° ë•Œë¬¸ì— pathë¥¼ ì´ìš©í•´ì„œ í•˜ëŠ” ë°©ì‹ì´ë‹¤. 
 
 
-**ÆÄÀÏ°ú µğ·ºÅä¸® »ı¼º**
+**íŒŒì¼ê³¼ ë””ë ‰í† ë¦¬ ìƒì„±**
 
-//°æ·Î»óÀÇ ¸¶Áö¸· µğ·ºÅä¸®¸¸ »ı¼º
+//ê²½ë¡œìƒì˜ ë§ˆì§€ë§‰ ë””ë ‰í† ë¦¬ë§Œ ìƒì„±
 Files.createDirectory(path);
 
-//°æ·Î»óÀÇ ¸ğµç µğ·ºÅä¸® »ı¼º( ¾øÀ» °æ¿ì )
+//ê²½ë¡œìƒì˜ ëª¨ë“  ë””ë ‰í† ë¦¬ ìƒì„±( ì—†ì„ ê²½ìš° )
 Files.createDirectories(path);
 
 
-**ÆÄÀÏ º¹»ç, ÀÌµ¿, »èÁ¦**
+**íŒŒì¼ ë³µì‚¬, ì´ë™, ì‚­ì œ**
 ```
 Files.copy(fromPath, toPath);
 Files.move(fromPath, toPath);
 Files.delete(path);
 ```
-**IO/NIO´Â ¾ğÁ¦ »ç¿ëÇÏ´Â°¡?**
+**IO/NIOëŠ” ì–¸ì œ ì‚¬ìš©í•˜ëŠ”ê°€?**
 
-* NIO»ç¿ë
+* NIOì‚¬ìš©
 
--¿¬°á Å¬¶óÀÌ¾ğÆ® ¼ö°¡ ¸¹°í ÇÏ³ªÀÇ ÀÔÃâ·Â Ã³¸® ÀÛ¾÷ÀÌ ¿À·¡ °É¸®Áö ¾Ê´Â °æ¿ì¿¡ »ç¿ë.
+-ì—°ê²° í´ë¼ì´ì–¸íŠ¸ ìˆ˜ê°€ ë§ê³  í•˜ë‚˜ì˜ ì…ì¶œë ¥ ì²˜ë¦¬ ì‘ì—…ì´ ì˜¤ë˜ ê±¸ë¦¬ì§€ ì•ŠëŠ” ê²½ìš°ì— ì‚¬ìš©.
  
-* IO »ç¿ë
+* IO ì‚¬ìš©
 
--¿¬°á Å¬¶óÀÌ¾ğÆ® ¼ö°¡ Àû°í, Àü¼ÛµÇ´Â µ¥ÀÌÅÍ°¡ ´ë¿ë·®ÀÌ¸é¼­ ¼øÀÚÀûÀ¸·Î Ã³¸®µÉ ÇÊ¿ä¼ºÀÌ ÀÖ´Â °æ¿ì.
+-ì—°ê²° í´ë¼ì´ì–¸íŠ¸ ìˆ˜ê°€ ì ê³ , ì „ì†¡ë˜ëŠ” ë°ì´í„°ê°€ ëŒ€ìš©ëŸ‰ì´ë©´ì„œ ìˆœìì ìœ¼ë¡œ ì²˜ë¦¬ë  í•„ìš”ì„±ì´ ìˆëŠ” ê²½ìš°.
 
+## ì½”ë“œ ë¶€ë¶„
 
-* ###MainBbs.java (ÄÚµå ¼öÁ¤. (¸ŞÀÎºÎºĞ Á¤¸® ¹× update,delete,write), nioÆÄÀÏ ÀÔÃâ·Â ¹æ½Ä±îÁö Ãß°¡)
+* **MainBbs.java (ì½”ë“œ ìˆ˜ì •. (ë©”ì¸ë¶€ë¶„ ì •ë¦¬ ë° update,delete,write), nioíŒŒì¼ ì…ì¶œë ¥ ë°©ì‹ê¹Œì§€ ì¶”ê°€)**
 
 ```
 
@@ -70,17 +71,17 @@ public class MainBbs {
 	}
 	
 	public void run(){
-	Controller controll = new Controller(); //ÄÁÆ®·Ñ·¯ °³Ã¼ »ı¼º.
+	Controller controll = new Controller(); //ì»¨íŠ¸ë¡¤ëŸ¬ ê°œì²´ ìƒì„±.
 	
 	Scanner scanner = new Scanner(System.in);
-	Scanner textScanner = new Scanner(System.in);  //ÅØ½ºÆ® ÀÔ·Â½Ã µû·Î ÀúÀåÇÏ±â À§ÇÑ ½ºÄ³³Ê
+	Scanner textScanner = new Scanner(System.in);  //í…ìŠ¤íŠ¸ ì…ë ¥ì‹œ ë”°ë¡œ ì €ì¥í•˜ê¸° ìœ„í•œ ìŠ¤ìºë„ˆ
 	String command = "";
 	
-	boolean runFlag = true; //exit¿ë ÇÃ·¡±×
-	boolean contentFlag = true; //ÅØ½ºÆ® ÀÔ·Â½Ã EnterÅ° Àû¿ë ÇÃ·¡±×
+	boolean runFlag = true; //exitìš© í”Œë˜ê·¸
+	boolean contentFlag = true; //í…ìŠ¤íŠ¸ ì…ë ¥ì‹œ Enterí‚¤ ì ìš© í”Œë˜ê·¸
 	
 		while(runFlag) {
-			System.out.println("Welcome!!\n »ç¿ëÇÏ½Ç Command¸¦ ÀÔ·ÂÇÏ¼¼¿ä. : create, read, list, exit");
+			System.out.println("Welcome!!\n ì‚¬ìš©í•˜ì‹¤ Commandë¥¼ ì…ë ¥í•˜ì„¸ìš”. : create, read, list, exit");
 			command = scanner.nextLine();
 			
 			if(command.equals("create")){
@@ -100,7 +101,7 @@ public class MainBbs {
 				delete(scanner, controll);
 				
 			}else if(command.equals("exit")){
-				print("°Ô½ÃÆÇÀ» Á¾·áÇÕ´Ï´Ù.");
+				print("ê²Œì‹œíŒì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				runFlag = false;
 				}
 			}
@@ -118,12 +119,12 @@ public class MainBbs {
 	public void write(Scanner scanner, Bbs bbs){
 	
 		boolean contentFlag = true;
-		System.out.print("ÀÛ¼ºÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä :    ");
+		System.out.print("ì‘ì„±ìë¥¼ ì…ë ¥í•˜ì„¸ìš” :    ");
 		bbs.setAuthor(scanner.nextLine());
-		System.out.print("Á¦¸ñÀ» ÀÔ·ÂÇÏ¼¼¿ä :   ");
+		System.out.print("ì œëª©ì„ ì…ë ¥í•˜ì„¸ìš” :   ");
 		bbs.setTitle(scanner.nextLine());
 		
-		print("³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä. ");
+		print("ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”. ");
 			String content ="";
 			String contents2 ="";
 			
@@ -141,7 +142,7 @@ public class MainBbs {
 	
 	public void update(Scanner scanner, Controller controll){
 		
-		System.out.print("¼öÁ¤ÇÒ ±Û¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ìˆ˜ì •í•  ê¸€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		String number = scanner.nextLine();
 		int no = Util.getNum(number);
 		Bbs bbs = controll.read(no);
@@ -152,12 +153,12 @@ public class MainBbs {
 	
 	
 	public void delete(Scanner scanner, Controller controll){
-		System.out.print("»èÁ¦ÇÒ ÇÒ ±Û¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì‚­ì œí•  í•  ê¸€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		String number = scanner.nextLine();
 		
 		int no = Util.getNum(number);
 		Bbs bbs = controll.read(no);
-		print("»èÁ¦ÇÏ½Ã°Ú½À´Ï±î? y/n");
+		print("ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ? y/n");
 		String yesORno = scanner.nextLine();
 		if(yesORno.equals("y")){
 			controll.delete(no);
@@ -168,26 +169,26 @@ public class MainBbs {
 	
 	
 	public void read(Scanner scanner, Controller controll){
-		//±Û¹øÈ£
-		print("±Û ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		//ê¸€ë²ˆí˜¸
+		print("ê¸€ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		int no = Integer.parseInt(scanner.nextLine());
 		
 		Bbs alreadyRead = controll.read(no);
 		if(alreadyRead != null){
-			print("±Û ¹øÈ£: " +alreadyRead.getNo());
-			print("±Û¾´ÀÌ: " +alreadyRead.getAuthor());
-			print("Á¦¸ñ: " +alreadyRead.getTitle());
-			print("³»¿ë " +alreadyRead.getContent());
-			print("ÀÛ¼º½Ã°£: "+alreadyRead.getDatetime());
+			print("ê¸€ ë²ˆí˜¸: " +alreadyRead.getNo());
+			print("ê¸€ì“´ì´: " +alreadyRead.getAuthor());
+			print("ì œëª©: " +alreadyRead.getTitle());
+			print("ë‚´ìš© " +alreadyRead.getContent());
+			print("ì‘ì„±ì‹œê°„: "+alreadyRead.getDatetime());
 		}
 	}
 	
 	public void list(Controller controll){
 		ArrayList<Bbs> list = controll.readAll();
 		for(Bbs item : list){
-			System.out.print("±Û¹øÈ£: "+item.getNo()+"  ±Û¾´ÀÌ: "+item.getTitle()+"  Á¦¸ñ: "+ item.getTitle());
-			print("  ÀÛ¼º½Ã°£: "+item.getDatetime());
-			print("³»¿ë:  "+item.getContent());
+			System.out.print("ê¸€ë²ˆí˜¸: "+item.getNo()+"  ê¸€ì“´ì´: "+item.getTitle()+"  ì œëª©: "+ item.getTitle());
+			print("  ì‘ì„±ì‹œê°„: "+item.getDatetime());
+			print("ë‚´ìš©:  "+item.getContent());
 		}	
 	}
 	public void print(String value){
@@ -196,9 +197,9 @@ public class MainBbs {
 }
 ```
 
-* ###Controller.java
+* **Controller.java**
 
--°¡»óÀÇ µ¥ÀÌÅÍº£ÀÌ½º °ø°£À» ¼³°èÇÏ°í ±× ¾È¿¡ nio¹æ½ÄÀ¸·Î ÆÄÀÏ ÀÔÃâ·ÂÀ» ³Ö¾ú´Ù.
+-ê°€ìƒì˜ ë°ì´í„°ë² ì´ìŠ¤ ê³µê°„ì„ ì„¤ê³„í•˜ê³  ê·¸ ì•ˆì— nioë°©ì‹ìœ¼ë¡œ íŒŒì¼ ì…ì¶œë ¥ì„ ë„£ì—ˆë‹¤.
 
 ```
 package com.heosongmoo.bbs;
@@ -228,16 +229,16 @@ public class Controller {
 	private void createDatabase(){
 		Path path = Paths.get(DATABASE_DIR, DATABASE_FILE);
 		if(Files.exists(path,LinkOption.NOFOLLOW_LINKS)){
-			//ÆÄÀÏ¿¡¼­ Ä«¿îÆ®¸¦ ÀĞ¾î¿Í¼­ ¼¼ÆÃ
+			//íŒŒì¼ì—ì„œ ì¹´ìš´íŠ¸ë¥¼ ì½ì–´ì™€ì„œ ì„¸íŒ…
 		}else{
-			//ÆÄÀÏÀ» »ı¼ºÇÏ¸é¼­ Á¦ÀÏ »ó´Ü¿¡ Ä«¿îÆ® 0¼¼ÆÃ
+			//íŒŒì¼ì„ ìƒì„±í•˜ë©´ì„œ ì œì¼ ìƒë‹¨ì— ì¹´ìš´íŠ¸ 0ì„¸íŒ…
 			FileUtil.writeNio(DATABASE_DIR, DATABASE_FILE, "0\r\n");
 		}
 	}
-	//Path path = Paths.get(FILE_DATABASE);//»ı¼º¿É¼Ç
+	//Path path = Paths.get(FILE_DATABASE);//ìƒì„±ì˜µì…˜
 	//FIles.write(path, serializedBbs.getBytes),
 	/**
-	 * »ı¼º
+	 * ìƒì„±
 	 * 
 	 * @param bbs
 	 */
@@ -253,7 +254,7 @@ public class Controller {
 				+"\r\n";
 		
 		FileUtil.writeNio(DATABASE_DIR, DATABASE_FILE, content);
-		//°´Ã¼¸¦ ½ºÆ®¸µÀ¸·Î ¹Ù²ãÁÖ´Â°Å.
+		//ê°ì²´ë¥¼ ìŠ¤íŠ¸ë§ìœ¼ë¡œ ë°”ê¿”ì£¼ëŠ”ê±°.
 		database.add(bbs);
 		
 	}
@@ -263,9 +264,9 @@ public class Controller {
 ```
 ------------------------
 
-* ###Util.java
+* **Util.java**
 
- »õ·Î Ãß°¡µÈ UtilÀº ÆÄÀÏ ÀÔÃâ·Â Å¬·¡½º´Ù.
+ ìƒˆë¡œ ì¶”ê°€ëœ Utilì€ íŒŒì¼ ì…ì¶œë ¥ í´ë˜ìŠ¤ë‹¤.
 
 ```
 public class FileUtil {
@@ -273,7 +274,7 @@ public class FileUtil {
 
 	public static List<String> readNioLines(String dir, String filename){
 			
-		Path path = Paths.get(dir, filename); //("µğ·ºÅä¸®°æ·Î","ÆÄÀÏ¸í")
+		Path path = Paths.get(dir, filename); //("ë””ë ‰í† ë¦¬ê²½ë¡œ","íŒŒì¼ëª…")
 		
 		try {
 			return Files.readAllLines(path);
@@ -286,7 +287,7 @@ public class FileUtil {
 		
 		
 	public static String readNio(String dir, String filename){
-		Path path = Paths.get(dir, filename); //("µğ·ºÅä¸®°æ·Î","ÆÄÀÏ¸í")
+		Path path = Paths.get(dir, filename); //("ë””ë ‰í† ë¦¬ê²½ë¡œ","íŒŒì¼ëª…")
 		
 		try {
 			byte rawData[] = Files.readAllBytes(path);
@@ -305,7 +306,7 @@ public class FileUtil {
 		try {
 			Files.write(path, content.getBytes(StandardCharsets.UTF_8),
 					StandardOpenOption.CREATE, StandardOpenOption.APPEND);
-			//½ºÅÙ´Ùµå¿ÀÇÃ¿É¼Ç;
+			//ìŠ¤í…ë‹¤ë“œì˜¤í”Œì˜µì…˜;
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
