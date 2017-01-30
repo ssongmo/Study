@@ -26,10 +26,15 @@ count와 unit을 입력 받아서 1부터 시작해서 매 라인 count의  숫자만큼 unit을 출력 
 
  예) count =5, unit =A
  A
+
  AA
+
  AAA
+
  AAAA
+
  AAAAA
+
 
 ```
 	public void showRectTri(int count, String unit){
@@ -49,10 +54,15 @@ count와 unit을 입력 받아서 1부터 시작해서 매 라인 count의  숫자만큼 unit을 출력 
  
  ex)    
          A
+
         AA
+
        AAA
+
       AAAA
+
      AAAAA
+
 
  ```       
 	public void showReverseTri(int count, String unit){
@@ -77,9 +87,13 @@ count와 unit을 입력 받아서 1부터 시작해서 매 라인 count의  숫자만큼 unit을 출력 
 피라미드를 만들어서 출력.
  
  ex)    A
+
        AAA
+
       AAAAA
-     AAAAAAA  
+
+     AAAAAAA
+  
 
 ```
 	public void showRectTri2(int count, String unit){
