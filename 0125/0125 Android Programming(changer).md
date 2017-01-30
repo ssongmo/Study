@@ -1,18 +1,18 @@
-#´ÜÀ§ º¯È¯ App ±¸ÇöÇØº¸±â (¹Ì¿Ï)
+#ë‹¨ìœ„ ë³€í™˜ App êµ¬í˜„í•´ë³´ê¸° (ë¯¸ì™„)
 
-ÀÌÁ¦ ¸· ¾Èµå·ÎÀÌµå¸¦ ½ÃÀÛ Çß±â¶§¹®¿¡ ¿Ïº¯ÇÑ ±¸ÇöÀº ¾î·Á¿üÀ¸³ª, ³×ÀÌ¹ö ´ÜÀ§º¯È¯±â¸¦ Ä«ÇÇÇØ ±¸ÇöÇØº¸¾Ò´Ù.
+ì´ì œ ë§‰ ì•ˆë“œë¡œì´ë“œë¥¼ ì‹œì‘ í–ˆê¸°ë•Œë¬¸ì— ì™„ë³€í•œ êµ¬í˜„ì€ ì–´ë ¤ì› ìœ¼ë‚˜, ë„¤ì´ë²„ ë‹¨ìœ„ë³€í™˜ê¸°ë¥¼ ì¹´í”¼í•´ êµ¬í˜„í•´ë³´ì•˜ë‹¤.
 
-(»çÁøÃ·°¡)
+https://github.com/ssongmo/Study/blob/master/0125/Screenshot_20170130-144535.png?raw=true
 
-### 1. ·¹ÀÌ¾Æ¿ô ±¸¼º (.xml)
+### 1. ë ˆì´ì•„ì›ƒ êµ¬ì„± (.xml)
 
-LinearLayout(horizontal, vertical)À» ¹İº¹ÀûÀ¸·Î »ç¿ëÇØ ÀüÃ¼ÀûÀÎ Æ²À» ±¸¼ºÇÏ¿´´Ù.
+LinearLayout(horizontal, vertical)ì„ ë°˜ë³µì ìœ¼ë¡œ ì‚¬ìš©í•´ ì „ì²´ì ì¸ í‹€ì„ êµ¬ì„±í•˜ì˜€ë‹¤.
 
-»çÁøÃß°¡
+https://github.com/ssongmo/Study/blob/master/0125/xml%20image.jpg?raw=true
 
 ### 2. ChangerActivity.java
 
-* ½ºÇÇ³Ê1,2¸¦ ±¸¼ºÇÏ¿© ´ÜÀ§¸¦ È¯»êÇÏ°í ½Í¾úÀ¸³ª, ¾ÆÁ÷ ¼³Á¤ÀÌ ¾î·Á¿ö ½ºÇÇÅÍ1À» mm·Î °íÁ¤½ÃÅ°°í ½ºÇÇ³Ê2¸¦ º¯È¯ÇßÀ»¶§ °ªÀÌ Ãâ·ÂµÇµµ·Ï ¼³°èÇÏ¿´´Ù.
+* ìŠ¤í”¼ë„ˆ1,2ë¥¼ êµ¬ì„±í•˜ì—¬ ë‹¨ìœ„ë¥¼ í™˜ì‚°í•˜ê³  ì‹¶ì—ˆìœ¼ë‚˜, ì•„ì§ ì„¤ì •ì´ ì–´ë ¤ì›Œ ìŠ¤í”¼í„°1ì„ mmë¡œ ê³ ì •ì‹œí‚¤ê³  ìŠ¤í”¼ë„ˆ2ë¥¼ ë³€í™˜í–ˆì„ë•Œ ê°’ì´ ì¶œë ¥ë˜ë„ë¡ ì„¤ê³„í•˜ì˜€ë‹¤.
 
 ```
 package com.example.songmoo.changer;
@@ -37,7 +37,7 @@ import java.util.ArrayList;
 import static android.R.id.edit;
 ```
 
-* »ç¿ë ÇÒ º¯¼ö ¼±¾ğ
+* ì‚¬ìš© í•  ë³€ìˆ˜ ì„ ì–¸
 
 ```
 public class ChangerActivity extends AppCompatActivity implements View.OnClickListener{
@@ -58,7 +58,7 @@ public class ChangerActivity extends AppCompatActivity implements View.OnClickLi
     float[]  ratio = { 1f, 0.1f, 0.001f, 1e-6f, 0.03937f, 0.003281f, 0.001094f, 6.2137e-7f};
 ```
 
-* onCreate ºÎºĞ(xml°ú ¿¬°á + ¸®½º³Ê)
+* onCreate ë¶€ë¶„(xmlê³¼ ì—°ê²° + ë¦¬ìŠ¤ë„ˆ)
 
 ```
     @Override
@@ -90,7 +90,7 @@ public class ChangerActivity extends AppCompatActivity implements View.OnClickLi
 
 
 
-//¸®½º³Ê
+//ë¦¬ìŠ¤ë„ˆ
         btnL.setOnClickListener(this);
         btnA.setOnClickListener(this);
         btnW.setOnClickListener(this);
@@ -139,33 +139,33 @@ public class ChangerActivity extends AppCompatActivity implements View.OnClickLi
 
 ```
 
-* ÇÏ´ÜºÎºĞÀÇ ÀÚµ¿ º¯È¯ ±â´É ±¸Çö +  ·¹ÀÌ¾Æ¿ô ¸®½º³Ê
+* í•˜ë‹¨ë¶€ë¶„ì˜ ìë™ ë³€í™˜ ê¸°ëŠ¥ êµ¬í˜„ +  ë ˆì´ì•„ì›ƒ ë¦¬ìŠ¤ë„ˆ
 
 ```
 
-//ÀÚµ¿ °»½Å onTextChanged
+//ìë™ ê°±ì‹  onTextChanged
         editText.addTextChangedListener(new TextWatcher() {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // ÀÔ·ÂµÇ´Â ÅØ½ºÆ®¿¡ º¯È­°¡ ÀÖÀ» ¶§
-                Toast.makeText(ChangerActivity.this, "»Ğ", Toast.LENGTH_SHORT).show();
+                // ì…ë ¥ë˜ëŠ” í…ìŠ¤íŠ¸ì— ë³€í™”ê°€ ìˆì„ ë•Œ
+                Toast.makeText(ChangerActivity.this, "ë¿…", Toast.LENGTH_SHORT).show();
                 calculateAll();
             }
 
             @Override
             public void afterTextChanged(Editable arg0) {
-                // ÀÔ·ÂÀÌ ³¡³µÀ» ¶§
+                // ì…ë ¥ì´ ëë‚¬ì„ ë•Œ
             }
 
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // ÀÔ·ÂÇÏ±â Àü¿¡
+                // ì…ë ¥í•˜ê¸° ì „ì—
             }
         });
 
     }
-    //·¹ÀÌ¾Æ¿ô ¸®½º³Ê
+    //ë ˆì´ì•„ì›ƒ ë¦¬ìŠ¤ë„ˆ
     View.OnClickListener clickListener = new View.OnClickListener(){
         @Override
         public void onClick(View view) {
@@ -189,7 +189,7 @@ public class ChangerActivity extends AppCompatActivity implements View.OnClickLi
     };
 ```
 
-* ´ÜÀ§ º¯È¯À» À§ÇÑ °è»êÄÚµå
+* ë‹¨ìœ„ ë³€í™˜ì„ ìœ„í•œ ê³„ì‚°ì½”ë“œ
 
 ```
     public void calculateAll() {
@@ -215,7 +215,7 @@ public class ChangerActivity extends AppCompatActivity implements View.OnClickLi
     }
 ```
 
-* ¼½¼Ç ±¸ºĞÇÏ±â
+* ì„¹ì…˜ êµ¬ë¶„í•˜ê¸°
 
 ```
     @Override
