@@ -2,13 +2,12 @@
 
 이제 막 안드로이드를 시작 했기때문에 완변한 구현은 어려웠으나, 네이버 단위변환기를 카피해 구현해보았다.
 
-https://github.com/ssongmo/Study/blob/master/0125/Screenshot_20170130-144535.png?raw=true
+![](https://github.com/ssongmo/Study/blob/master/0125/Screenshot_20170130-144535.png?raw=true)
 
 ### 1. 레이아웃 구성 (.xml)
 
 LinearLayout(horizontal, vertical)을 반복적으로 사용해 전체적인 틀을 구성하였다.
-
-https://github.com/ssongmo/Study/blob/master/0125/xml%20image.jpg?raw=true
+![]( https://github.com/ssongmo/Study/blob/master/0125/xml%20image.jpg?raw=true)
 
 ### 2. ChangerActivity.java
 
