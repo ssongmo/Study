@@ -111,6 +111,7 @@ public class Visit {
 ### Decorator
  Proxy와 유사하지만 데이터의 변경 및 삭제가 발생한다면 Decorator라고 한다.
  간단하게 정리하자면 데이터를 가공하게 되면 Decorator, 정류장처럼 지나가는것이면 Proxy이다.
+
 ---
 
 
@@ -139,6 +140,7 @@ public class Visit {
  *Factory Method 패턴은  생성하고자 하는 객체의 클래스(Product)와 이를 생성하는 클래스(Factory)의 인터페이스만 공개하여 재사용성을 높입니다.*
 
 ---
+
  ### Strategy
 
  * 탬플릿 패턴과 유사한데, 탬플릿패턴이 상속을 이용하는 반면 Strategy패턴은 객체 주입을 통해 다양한 결과를 도출할 수 있다. 기본적으로 아래 3요소가 필요하다.
