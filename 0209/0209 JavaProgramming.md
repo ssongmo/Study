@@ -1,12 +1,12 @@
 
 ## Design Patteren -Part.1
- ### Singleton
- 
+### Singleton
+
 - 싱글턴 패턴은 자원을 공유하기 위한 목적으로 사용한다.
 - multi=Thread 환경에서는 아래 로직에 동기화를 추가해야한다.
 
 
-``` 
+```
 public class Singleton{
 	//자신을 담아두는 변수 공간.
 	private static Singleton instance = null;
