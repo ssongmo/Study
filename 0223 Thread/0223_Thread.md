@@ -6,15 +6,19 @@
 ####  1) attrs.xml 파일 생성 후, main activity에 적용하기.
 
 1. 먼저 values에 attrs.xml이 없다면 직접 생성해준다.
+
 ![attrs](http://i.imgur.com/XQs2geJ.png)
 
 2. attrs.xml 파일안에 사용할 뷰의 이름과 형식에 대해서 정의한다.
+
 ![attrs content](http://i.imgur.com/vPuKqPU.png)
 
 3. activity_main.xml 파일에 적용.
+
 ![main.xml](http://i.imgur.com/EPLkc22.png)
 
 4. 사용할 CustomView의 Class와 Method를 생성.
+
 ![attrs가져오기](http://i.imgur.com/0ogIIRk.png)
 
 
